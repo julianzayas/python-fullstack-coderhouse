@@ -1,9 +1,8 @@
 # Ejercicio Mavel vs Capcom
 # -------------------------
 
-nombre = input("¿Cual es tu nombre? ")
-preferencia = input("Cual es tu preferencia Marvel(M) o Capcom(C): ")
-
+nombre = input("¿Cuál es tu nombre?: ")
+preferencia = input("Cuál es tu preferencia Marvel(M) o Capcom(C): ")
 if(nombre < "M" and preferencia == "M") or (nombre > "N" and preferencia == "C"):
     print("Eres del Grupo A")
 else:
@@ -13,9 +12,14 @@ else:
 # -----------------
 
 #Marvel vs Capcom
-nombre = input("¿Cómo te llamas?: ")
-fan = input("¿Cuál es tu preferencia (Marvel o Capcom)?: ")
-if (fan == "Marvel" and nombre < "M") or (fan == "Capcom" and nombre > "N"):
-  print("SOS DEL GRUPO A")
-else: 
-  print("Sos del epico grupo B!!!!!!!!!")
+nombre = input("¿Cuál es tu nombre?: ").upper()
+pref = input("¿Cuál es tu preferencia, Marvel(M) o Capcom(C)?: ").upper
+# Validación:
+if pref not in ["M", "C"]: # Lista
+  print("No es una preferencia válida")
+else:
+  if (pref == "M" and nombre[0] < "M") or (pref == "C" and nombre[0] > "N"):
+    print("SOS DEL GRUPO A")
+  else:
+    print("Sos del epico grupo B!!!!!!!!!")
+

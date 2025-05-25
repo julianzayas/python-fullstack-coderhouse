@@ -2,7 +2,6 @@
 # -----------------------------------------------
 
 anio_nac = int(input("Ingrese el año de su nacimiento: "))
-
 if 1920 <= anio_nac <= 1940: print("Usted pertenece a la Generación Silenciosa.")
 elif 1946 <= anio_nac <= 1964: print("Usted pertenece a la Generación Baby Boomer.")
 elif 1965 <= anio_nac <= 1979: print("Usted pertenece a la Generación X.")
